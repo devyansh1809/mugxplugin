@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ExtensionManifest Version="7.0" ExtensionBundleId="com.mugx.printplugin" ExtensionBundleVersion="7.0.1" ExtensionBundleName="MugX Print Plugin Pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ExtensionList><Extension Id="com.mugx.printplugin.panel" Version="7.0.1"/></ExtensionList>
+  <ExecutionEnvironment>
+    <HostList><Host Name="PHSP" Version="16.0"/></HostList>
+    <LocaleList><Locale Code="All"/></LocaleList>
+    <RequiredRuntimeList><RequiredRuntime Name="CSXS" Version="7.0"/></RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="com.mugx.printplugin.panel">
+      <DispatchInfo>
+        <Resources><MainPath>./client/index.html</MainPath><ScriptPath>./host/index.jsx</ScriptPath></Resources>
+        <Lifecycle><AutoVisible>true</AutoVisible></Lifecycle>
+        <UI><Type>Panel</Type><Menu>MugX Panel</Menu><Geometry><Size><Width>390</Width><Height>760</Height></Size><MinSize><Width>310</Width><Height>540</Height></MinSize></Geometry></UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>

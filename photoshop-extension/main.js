@@ -1,0 +1,2 @@
+/* CEP bridge. index.html includes this after CSInterface.js. */
+(function(){'use strict';if(typeof CSInterface==='undefined')return;var cs=new CSInterface();function esc(s){return String(s).replace(/\\/g,'\\\\').replace(/"/g,'\\"');}function hostFile(){var path=cs.getSystemPath(SystemPath.EXTENSION);return path+'/host/index.jsx';}cs.evalScript('$.evalFile("'+esc(hostFile())+'")',function(result){if(result&&String(result).match(/error/i))console.error('MugX host load error: '+result);});}());
